@@ -1,13 +1,5 @@
-const debugMode=false;
 module.exports = function solveSudoku(matrix) {
-
-    let res= step(matrix);
-    if(debugMode){
-        for (let i = 0; i < 9; i++) {
-            console.log(res[i]);
-        }
-    }
-    return res;
+    return step(matrix);
 }
 
 function step(matrix) {
